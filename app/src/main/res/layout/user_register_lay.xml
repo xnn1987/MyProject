@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_back"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/onlytitle_ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+          >
+
+            <LinearLayout
+                android:id="@+id/titleBar_ll_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/aixiyi_back" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titleBar_tv_title"
+                android:layout_toRightOf="@id/titleBar_ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/aixiyi_header_gray"
+                android:textSize="@dimen/aixiyi_normal"
+                />
+
+        </RelativeLayout>
+        <include layout="@layout/no_network_status" />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/aixiyi_header_txt"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
+                android:layout_marginTop="31dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/aixiyi_normal" />
+            <EditText
+                android:id="@+id/tel_edt"
+                style="@style/aixiyi_input_edt"
+                android:layout_width="@dimen/aixiyi_input_width"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:hint="@string/lr_tel_txt"
+                 />
+            <include
+                layout="@layout/login_line_lay"
+                />
+            <RelativeLayout
+                android:layout_width="@dimen/aixiyi_input_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal">
+                <EditText
+                    android:id="@+id/yanzheng_edt"
+                    style="@style/aixiyi_input_edt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:hint="@string/lr_yan_txt"
+                    android:maxLength="11" />
+
+                <Button
+                    android:id="@+id/have_yangz_btn"
+                    style="@style/login_reg_yanzheng_btn_lay_style" />
+                <View
+                    android:layout_below="@id/yanzheng_edt"
+                    android:layout_width="@dimen/aixiyi_input_width"
+                    android:layout_height="@dimen/common_margin_status"
+                    android:background="@color/aixiyi_line_gray"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    />
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/pass_edt"
+                style="@style/aixiyi_input_edt"
+                android:layout_width="@dimen/aixiyi_input_width"
+                android:layout_height="30dp"
+                android:layout_marginTop="32dp"
+                android:hint="@string/lr_setpas_txt"
+                android:password="true"/>
+            <include
+                layout="@layout/login_line_lay"
+                />
+            <EditText
+                android:id="@+id/repass_edt"
+                style="@style/aixiyi_input_edt"
+                android:layout_width="@dimen/aixiyi_input_width"
+                android:layout_height="30dp"
+                android:layout_marginTop="32dp"
+                android:hint="@string/lr_surepas_txt"
+                android:password="true"/>
+            <include
+                layout="@layout/login_line_lay"
+                />
+            <Button
+                android:id="@+id/gz_result_btn"
+                android:layout_width="@dimen/aixiyi_btn_width"
+                android:layout_height="@dimen/aixiyi_btn_hight"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/register_result_btn"
+                android:text="@string/regiester"
+                android:textColor="@color/white"
+                android:textSize="@dimen/aixiyi_normal"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

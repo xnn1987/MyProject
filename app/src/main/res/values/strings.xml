@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">爱洗衣</string>
+    <string name="not_network">主人 没网了，请检查网络</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="p2refresh_head_load_more">加载中...</string>
+    <string name="p2refresh_end_load_more">更   多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_down_to_refresh">上拉刷新</string>
+    <string name="xlistview_footer_pull">上拉加载更多</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新&#8230;</string>
+    <string name="p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
+    <string name="nothing_datas">没有更多数据</string>
+    <string name="Loading_Show">正在加载,请稍等</string>
+    <string name="Loading_ERROR">网络不稳定</string>
+    <string name="new_message">有新消息提示</string>
+    <string name="no_new_message">暂无新消息</string>
+    <string name="listfooterview_normal">查看更多</string>
+    <string name="listfooterview_ready">松开载入更多</string>
+
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="error_key">key验证无效！</string>
+    <string name="error_other">未知错误，请稍后重试!错误码为</string>
+
+    <!--主体-->
+    <!--登录部分-->
+    <string name="user_login">用户登录</string>
+    <string name="user_skip">跳过</string>
+    <string name="login">登录</string>
+    <string name="regiester">注册</string>
+    <string name="forget_pass">忘记密码?</string>
+    <string name="lr_wancheng">完成</string>
+    <string name="lr_tel_txt">手机号</string>
+    <string name="lr_pass_txt">密码</string>
+    <string name="lr_yan_txt">验证码</string>
+    <string name="lr_pas_txt">&#160;&#160;&#160;密码:</string>
+    <string name="lr_setpas_txt">设置密码</string>
+    <string name="lr_surepas_txt">确认密码</string>
+    <string name="lr_fyan_txt">验证码:</string>
+    <string name="lr_fpas_txt">新密码</string>
+    <string name="lr_ensure_fpas_txt">确认新密码</string>
+    <string name="lr_ensure_txt">确定</string>
+    <string name="lr_rtel_txt">&#160;&#160;手机号:</string>
+    <string name="lr_tel">请输入手机号</string>
+    <string name="lr_pass">请输入密码</string>
+    <string name="lr_repass">请再次输入密码</string>
+    <string name="lr_yanzheng">验证码</string>
+    <string name="lr_have_yanzheng">获取验证码</string>
+    <string name="lr_xieyi">登录即表示您同意《爱洗衣服务协议》</string>
+    <!--主页部分-->
+    <string name="main_xiyi">洗衣</string>
+    <string name="main_sys">扫一扫</string>
+    <string name="main_dingdan">订单</string>
+    <string name="main_life">生活小助手</string>
+    <string name="main_washing">正在洗衣</string>
+
+    <!--左边部分-->
+    <string name="left_username">用户名：</string>
+    <string name="left_person">个人信息</string>
+    <string name="left_myqianbao">我的钱包</string>
+    <string name="left_myhongbao">我的红包</string>
+    <string name="left_mydingdan">我的订单</string>
+    <string name="left_adsshouyi">广告收益</string>
+    <string name="left_cversion">当前版本</string>
+    <string name="left_messagecenter">消息中心</string>
+    <string name="left_suggestback">意见反馈</string>
+    <string name="left_setting">设置</string>
+    <string name="left_kefu">联系客服：400 820  4120</string>
+    <string name="left_shijian">周一-周日  9:00- 22:00</string>
+    <string name="left_backmain">回到首页</string>
+    <string name="left_ads_total">总收益</string>
+    <!--个人信息-->
+    <string name="person_header">头像</string>
+    <string name="person_tel">手机号</string>
+    <string name="person_address">地址</string>
+    <string name="person_name">姓名</string>
+    <string name="person_sex">性别</string>
+    <string name="person_collage">学校</string>
+    <string name="person_class">年级</string>
+    <string name="person_year">出生年月</string>
+    <string name="person_loginpass">登录密码</string>
+    <string name="person_paypass">支付密码</string>
+    <string name="person_three">第三方账号绑定</string>
+    <string name="person_change">修改</string>
+    <string name="person_exiting">退出登录</string>
+    <!--提示信息-->
+    <string name="log_reg_tel">手机号为空或者号码错误，请重新输入</string>
+    <string name="log_reg_pass">密码为空，请重新输入</string>
+    <string name="log_success">登陆成功</string>
+    <string name="log_reg_pass_t">手机号不正确，请重新输入</string>
+    <string name="log_reg_pass_f">密码不正确，请重新输入</string>
+    <string name="log_reg_pass_tf">手机号或者密码不正确，请重新输入</string>
+    <string name="reg_pass">两次密码不一致</string>
+    <string name="reg_yzm">请输入验证码</string>
+    <string name="reg_zcxy">请您仔细看注册协议在注册</string>
+    <string name="version_name">已经是最新版本</string>
+    <string name="upload_success">头像上传成功</string>
+    <string name="upload_fail">头像上传失败</string>
+    <string name="per_upload_success">个人信息上传成功</string>
+    <string name="per_upload_fail">个人信息上传失败</string>
+    <string name="down_success">下载成功</string>
+    <string name="down_fail">下载失败</string>
+    <string name="person_nike">昵称为空或者号码错误，请重新输入</string>
+    <string name="person_company">公司为空或者号码错误，请重新输入</string>
+    <string name="detial_id">资源Id为空</string>
+    <string name="personinfo">输入内容为空，请重新输入</string>
+    <string name="log_user_info">获取用户信息失败</string>
+    <string name="person_edt">请输入内容...</string>
+
+    <!--二维码-->
+    <string name="person_fail">获取图片失败</string>
+    <string name="person_erwm">二维码上传</string>
+    <string name="person_erwm_sm">二维码扫描</string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="app_tip">提示</string>
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+</resources>

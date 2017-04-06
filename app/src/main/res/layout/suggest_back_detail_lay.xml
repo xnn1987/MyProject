@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aixiyi_main_backgroud"
+    android:fitsSystemWindows="true">
+    <include
+        android:id="@+id/header_lay"
+        layout="@layout/title_only_backicon_title" />
+    <LinearLayout
+        android:layout_below="@id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/aixiyi_normal_right"
+            android:layout_marginRight="@dimen/aixiyi_normal_right"
+            android:layout_marginTop="@dimen/common_margin_top">
+
+            <com.cn.aixiyi.myview.PullToRefreshView
+                android:id="@+id/MMA_ptr_contain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/MMA_lv_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/aixiyi_main_backgroud"
+                    android:dividerHeight="@dimen/aixiyi_divider_hight"
+                    android:listSelector="#00000000" />
+
+            </com.cn.aixiyi.myview.PullToRefreshView>
+
+            <ImageView
+                android:id="@+id/MMA_iv_wujilu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/wujilu" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_profile_image"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/send_txt"
+            style="@style/header_right_img"
+            android:layout_marginRight="28dp"
+            android:text="发送"
+            android:textColor="@color/aixiyi_setting_gray"
+            android:textSize="@dimen/aixiyi_normal" />
+
+        <EditText
+            android:id="@+id/suggest_edt"
+            style="@style/Login_style_Edt"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/aixiyi_normal_left"
+            android:layout_marginRight="@dimen/aixiyi_normal"
+            android:layout_toLeftOf="@id/send_txt" />
+    </RelativeLayout>
+</RelativeLayout>

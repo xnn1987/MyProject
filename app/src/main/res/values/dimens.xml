@@ -1,0 +1,67 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="slidingmenu_offset">80dp</dimen>
+    <dimen name="common_margin_status">0.25dp</dimen>
+    <dimen name="statusBar_height">26dp</dimen>
+    <dimen name="common_margin_10">10.0dip</dimen>
+    <dimen name="common_margin_0.5">0.5dip</dimen>
+    <dimen name="login_header_hight">60dp</dimen>
+    <dimen name="person_item_hight">48dp</dimen>
+    <dimen name="custom_profile_image">50dp</dimen>
+    <dimen name="custom_profile_padding">2dp</dimen>
+    <!--爱洗衣文字大小-->
+    <dimen name="aixiyi_big">18sp</dimen>
+    <dimen name="aixiyi_title_header">14sp</dimen>
+    <dimen name="aixiyi_normal_big">15sp</dimen>
+    <dimen name="aixiyi_normal">14sp</dimen>
+    <dimen name="aixiyi_normal_little">13sp</dimen>
+    <dimen name="aixiyi_small">12sp</dimen>
+    <dimen name="aixiyi_little_small">11sp</dimen>
+    <dimen name="aixiyi_little_smaller">9sp</dimen>
+    <dimen name="aixiyi_skip">14sp</dimen>
+
+    <!--爱洗衣布局距离大小-->
+    <dimen name="aixiyi_input_width">250dp</dimen>
+    <dimen name="aixiyi_input_hight">44dp</dimen>
+
+    <dimen name="aixiyi_divider_hight">12dp</dimen>
+    <dimen name="aixiyi_divider_lowerhight">0.25dp</dimen>
+    <dimen name="person_infoheader_hight">46dp</dimen>
+    <dimen name="person_info_hight">60dp</dimen>
+    <dimen name="aixiyi_main_hight">60dp</dimen>
+    <dimen name="aixiyi_main_mddle_hight">80dp</dimen>
+    <dimen name="common_margin_top">12dp</dimen>
+    <dimen name="common_margin_top2">14dp</dimen>
+    <dimen name="common_margin_top3">10dp</dimen>
+    <dimen name="common_margin_top4">20dp</dimen>
+    <dimen name="aixiyi_normal_left">15dp</dimen>
+    <dimen name="aixiyi_normal_left1">16dp</dimen>
+    <dimen name="aixiyi_normal_right">15dp</dimen>
+    <dimen name="aixiyi_btn_width">165dp</dimen>
+    <dimen name="aixiyi_btn_width1">110dp</dimen>
+    <dimen name="aixiyi_btn_hight">44dp</dimen>
+    <dimen name="aixiyi_menu">70dp</dimen>
+    <dimen name="common_margin_left">11dp</dimen>
+    <dimen name="common_margin_left2">12dp</dimen>
+    <dimen name="common_margin_left3">30dp</dimen>
+    <dimen name="common_margin_left4">13dp</dimen>
+    <dimen name="aixiyi_item_hight">90dp</dimen>
+    <dimen name="aixiyi_item_hight1">45dp</dimen>
+    <dimen name="aixiyi_cricle_width">55dp</dimen>
+    <dimen name="aixiyi_cricle_hight">19dp</dimen>
+    <dimen name="aixiyi_detial_width">50dp</dimen>
+    <dimen name="aixiyi_detail_hight">35dp</dimen>
+    <dimen name="aixiyi_detail_hight1">100dp</dimen>
+    <dimen name="aixiyi_control_width">52dp</dimen>
+    <dimen name="aixiyi_control_hight">55dp</dimen>
+    <dimen name="aixiyi_control_width1">75dp</dimen>
+    <dimen name="aixiyi_control_hight1">75dp</dimen>
+    <dimen name="aixiyi_qianbao_hight">44dp</dimen>
+    <dimen name="aixiyi_message_width">40dp</dimen>
+    <dimen name="aixiyi_message_hight">40dp</dimen>
+    <dimen name="aixiyi_re_width">85dp</dimen>
+    <dimen name="aixiyi_re_hight">8dp</dimen>
+</resources>

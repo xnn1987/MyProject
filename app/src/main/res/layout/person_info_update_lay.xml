@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aixiyi_main_backgroud"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_three_view_titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_info_hight"
+        android:background="@drawable/click_trasparent_selector">
+
+        <TextView
+            android:id="@+id/person_info_txt"
+            style="@style/person_info_left_style"
+            android:text="@string/person_address" />
+
+        <EditText
+            android:id="@+id/person_info_edt"
+            style="@style/person_info_rightedt_style"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

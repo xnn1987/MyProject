@@ -1,0 +1,138 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "com.cn.aixiyi"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+
+//        ndk {
+//            moduleName = "JniTest"
+//            ldLibs "log", "z", "m"
+//            abiFilters  "armeabi","armeabi-v7a","x86"
+//        }
+
+        sourceSets {
+            main {
+                jniLibs.srcDirs = ['libs']
+            }
+        }
+    }
+
+    //  签名
+//    signingConfigs {
+//        release {
+//            //这样写就得把keystore.jks文件放在项目目录
+//            storeFile file("keystore.jks")
+//            storePassword "123456"
+//            keyAlias "xxjr"
+//            keyPassword "123456"
+//        }
+//
+//    }
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            versionNameSuffix "-debug"
+            zipAlignEnabled false
+            shrinkResources false
+            //混淆
+            minifyEnabled false
+            //加载默认混淆配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+//        release {
+//            // 不显示Log
+//            buildConfigField "boolean", "LOG_DEBUG", "false"
+//
+//            //Zipalign优化
+//            zipAlignEnabled true
+//            // 移除无用的resource文件
+//            shrinkResources true
+//            //签名
+//            signingConfig signingConfigs.release
+//
+//            //混淆
+//            minifyEnabled true
+//            //加载默认混淆配置文件
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+    }
+    tasks.withType(JavaCompile) {
+        //指定编译JDK版本
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        abortOnError false
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    //  多渠道打包
+//    productFlavors {
+//        "default" {}
+//        google {}
+//        "91" {}
+//        hiapk {}
+//        gfan {}
+//        goapk {}
+//        appChina {}
+//        mumayi {}
+//        eoe {}
+//        nduo {}
+//        feiliu {}
+//        crossmo {}
+//        huawei {}
+//        QQ {}
+//        "3G" {}
+//        "360" {}
+//        baidu {}
+//        sohu {}
+//        "163" {}
+//        UC {}
+//        dangle {}
+//        samsung {}
+//        mmw {}
+//        xiaomi {}
+//        lenovo {}
+//        nearme {}
+//        wandoujia {}
+//        productFlavors.all { flavor ->
+//            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+//        }
+//
+//    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.android.support:recyclerview-v7:24.0.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    testCompile 'junit:junit:4.12'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.alibaba:fastjson:latest.integration'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile files('libs/httpmime-4.1.3.jar')
+    compile files('libs/EventBus2.4.jar')
+    compile files('libs/okhttp-2.7.5.jar')
+    compile files('libs/xcb-common-1.1.0.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/alipaySdk-20161009.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile project(':okhttputils')
+
+}

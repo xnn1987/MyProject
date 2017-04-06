@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aixiyi_main_backgroud"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_only_backicon_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/common_margin_top"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/aixiyi_normal_left"
+            android:layout_marginRight="@dimen/aixiyi_normal_right"
+            android:layout_marginTop="19dp">
+
+            <LinearLayout
+                android:id="@+id/runajian_lay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_suggest_back_blue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/runajian_txt"
+                    android:layout_width="@dimen/aixiyi_detail_hight1"
+                    android:layout_height="@dimen/aixiyi_message_width"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="软件运行"
+                    android:textColor="@color/aixiyi_center_txt_blue"
+                    android:textSize="@dimen/aixiyi_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jiqi_lay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/aixiyi_normal_left"
+                android:layout_marginRight="@dimen/aixiyi_normal_right"
+                android:layout_weight="1"
+                android:background="@drawable/btn_suggest_back_gray"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/jiqi_txt"
+                    android:layout_width="@dimen/aixiyi_detail_hight1"
+                    android:layout_height="@dimen/aixiyi_message_width"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="机器运行"
+                    android:textColor="@color/aixiyi_setting_gray"
+                    android:textSize="@dimen/aixiyi_normal"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xiangguan_lay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_suggest_back_gray"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/xiangguan_txt"
+                    android:layout_width="@dimen/aixiyi_detail_hight1"
+                    android:layout_height="@dimen/aixiyi_message_width"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="相关服务"
+                    android:textColor="@color/aixiyi_setting_gray"
+                    android:textSize="@dimen/aixiyi_normal"
+                   />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/aixiyi_normal_left"
+            android:layout_marginRight="@dimen/aixiyi_normal_right"
+            android:layout_marginTop="@dimen/aixiyi_normal_left">
+
+            <LinearLayout
+                android:id="@+id/qita_lay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_suggest_back_gray"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/qita_txt"
+                    android:layout_width="@dimen/aixiyi_detail_hight1"
+                    android:layout_height="@dimen/aixiyi_message_width"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="其他"
+                    android:textColor="@color/aixiyi_setting_gray"
+                    android:textSize="@dimen/aixiyi_normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/aixiyi_normal_left"
+                android:layout_marginRight="@dimen/aixiyi_normal_right"
+                >
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+            </LinearLayout>
+        </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginLeft="@dimen/aixiyi_normal_left"
+    android:layout_marginRight="@dimen/aixiyi_normal_right"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/btn_suggest_back_gray">
+
+    <EditText
+        android:id="@+id/cust_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="说点什么吧。。。"
+        android:inputType="textMultiLine"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:textColor="#9a9a9a"
+        android:textColorHint="#cfcfcf"
+        android:textSize="14sp" />
+    <RelativeLayout
+        android:id="@+id/Feedback_ll_uploadPicture"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aixiyi_detial_width"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/aixiyi_normal_left"
+        android:layout_marginBottom="@dimen/aixiyi_normal_right"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/Feedback_iv_uploading_lay"
+            android:layout_width="@dimen/aixiyi_detial_width"
+            android:layout_height="@dimen/aixiyi_detial_width">
+            <ImageView
+                android:id="@+id/Feedback_iv_uploading_img"
+                android:layout_width="@dimen/aixiyi_detial_width"
+                android:layout_height="@dimen/aixiyi_detial_width"
+                android:src="@mipmap/my_save_xiyiji" />
+            <ImageView
+                android:id="@+id/Feedback_iv_delete_img"
+                android:layout_width="@dimen/aixiyi_normal_right"
+                android:layout_height="@dimen/aixiyi_normal_right"
+                android:src="@mipmap/suggest_delete"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/Feedback_iv_uploading"
+            android:layout_toRightOf="@id/Feedback_iv_uploading_lay"
+            android:layout_width="@dimen/aixiyi_detial_width"
+            android:layout_height="@dimen/aixiyi_detial_width"
+            android:layout_marginLeft="@dimen/aixiyi_normal_left"
+            android:src="@mipmap/suggest_add"
+           />
+    </RelativeLayout>
+</RelativeLayout>
+    <Button
+        android:id="@+id/ensure_btn"
+        android:layout_width="@dimen/aixiyi_btn_width"
+        android:layout_height="@dimen/aixiyi_btn_hight"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="@dimen/aixiyi_normal_left"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/register_result_btn"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/aixiyi_normal"/>
+    </LinearLayout>
+</LinearLayout>

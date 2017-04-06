@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/aixiyi_item_hight"
+    android:background="@drawable/click_trasparent_selector"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/washing_title"
+        android:layout_width="@dimen/aixiyi_item_hight"
+        android:layout_height="@dimen/aixiyi_item_hight"
+        android:src="@mipmap/my_save_xiyiji02"
+         />
+
+    <LinearLayout
+        android:id="@+id/middle_lay"
+        android:layout_toRightOf="@id/washing_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_margin_left4"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/waching_style_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="富源居1号机"
+            android:maxLength="11"
+            android:textColor="@color/aixiyi_setting_gray"
+            android:textSize="@dimen/aixiyi_normal" />
+        <TextView
+            android:id="@+id/waching_address_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="旧市头7巷2号富源居"
+            android:textColor="@color/aixiyi_qianbao_lightgray"
+            android:textSize="@dimen/aixiyi_normal_little" />
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/yuding_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_selector_coners_save"
+            android:text="预定"
+            android:textColor="@color/aixiyi_setting_gray"
+            android:textSize="@dimen/aixiyi_normal" />
+        <TextView
+            android:id="@+id/waching_state_txt"
+            android:layout_toLeftOf="@id/yuding_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="30dp"
+            android:text="空闲"
+            android:textColor="@color/aixiyi_center_txt_blue"
+            android:textSize="@dimen/aixiyi_normal"/>
+
+</RelativeLayout>

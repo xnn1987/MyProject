@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aixiyi_center_txt_blue"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/left_user_name_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/aixiyi_menu">
+
+                <com.cn.aixiyi.myview.MyHeaderCricleView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/aixiyi_menu"
+                    android:layout_height="@dimen/aixiyi_menu"
+                    android:layout_marginTop="66dp"
+                    android:src="@mipmap/morentoux"
+                    app:border_color="#FFffffff"
+                    app:border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/left_user_name_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin_left"
+                    android:layout_marginTop="83dp"
+                    android:layout_toRightOf="@+id/profile_image"
+                    android:text="用户名："
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/aixiyi_normal_big" />
+
+                <TextView
+                    android:id="@+id/left_user_phone_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left_user_name_txt"
+                    android:layout_marginLeft="@dimen/common_margin_left"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/profile_image"
+                    android:text="12345667"
+                    android:textColor="@color/aixiyi_headerleft_gray"
+                    android:textSize="@dimen/aixiyi_normal" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_qianbao_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="66dp">
+                <View
+                    android:id="@+id/qiabao_line"
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="@color/white"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:id="@+id/my_qianbao_txt"
+                    android:layout_toRightOf="@id/qiabao_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_left3"
+                    android:text="@string/left_myqianbao"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/aixiyi_normal"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/left_dingdan_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37dp">
+                <View
+                    android:id="@+id/dingdan_line"
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="#00000000"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_toRightOf="@id/dingdan_line"
+                    android:layout_marginLeft="@dimen/common_margin_left3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/left_mydingdan"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/aixiyi_normal"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <RelativeLayout
+                android:id="@+id/left_ads_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37dp">
+
+                <View
+                    android:id="@+id/ads_line"
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="#00000000"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_toRightOf="@id/ads_line"
+                    android:layout_marginLeft="@dimen/common_margin_left3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/left_adsshouyi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/aixiyi_normal"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <RelativeLayout
+                android:id="@+id/left_message_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37dp">
+                <View
+                    android:id="@+id/message_line"
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="#00000000"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:id="@+id/left_message_txt"
+                    android:layout_toRightOf="@id/message_line"
+                    android:layout_marginLeft="@dimen/common_margin_left3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/left_messagecenter"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/aixiyi_normal"/>
+                <LinearLayout
+                    android:layout_toRightOf="@id/left_message_txt"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="113dp" >
+                    <TextView
+                        android:id="@+id/left_messagenum_txt"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/aixiyi_small"
+                        android:background="@drawable/btn_shape_coners_left"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <RelativeLayout
+                android:id="@+id/left_suggest_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37dp">
+                <View
+                    android:id="@+id/suggest_line"
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="#00000000"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_toRightOf="@id/suggest_line"
+                    android:layout_marginLeft="@dimen/common_margin_left3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/left_suggestback"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/aixiyi_normal"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+            <RelativeLayout
+                android:id="@+id/left_setting_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37dp">
+
+                <View
+                    android:id="@+id/setting_line"
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="#00000000"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_toRightOf="@id/setting_line"
+                    android:layout_marginLeft="@dimen/common_margin_left3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/left_setting"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/aixiyi_normal"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/left_tel_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="111dp">
+
+                <View
+                    android:id="@+id/tel_line"
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="#00000000"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:layout_toRightOf="@id/tel_line"
+                    android:layout_marginLeft="@dimen/common_margin_left3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/kefu_tel_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/left_kefu"
+                        android:textColor="@color/aixiyi_headerleft_gray"
+                        android:textSize="@dimen/aixiyi_normal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/left_shijian"
+                        android:textColor="@color/aixiyi_headerleft_gray"
+                        android:textSize="@dimen/aixiyi_normal"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

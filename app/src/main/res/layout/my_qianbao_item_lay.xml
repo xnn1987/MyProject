@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aixiyi_main_hight"
+        android:background="@drawable/click_trasparent_selector">
+
+        <TextView
+            android:id="@+id/xiyi_time_txt"
+            style="@style/qianbao_txt_style"
+            android:text="2016-10-24" />
+
+        <TextView
+            android:id="@+id/xiyi_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="61dp"
+            android:layout_toRightOf="@id/xiyi_time_txt"
+            android:text="洗衣"
+            android:textColor="@color/aixiyi_setting_gray"
+            android:textSize="@dimen/aixiyi_normal" />
+
+        <TextView
+            android:id="@+id/xiyi_num_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/aixiyi_normal_right"
+            android:text="-70"
+            android:textColor="@color/aixiyi_qianbao_red"
+            android:textSize="@dimen/aixiyi_normal" />
+    </RelativeLayout>
+</LinearLayout>

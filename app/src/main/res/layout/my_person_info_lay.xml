@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aixiyi_main_backgroud"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <include layout="@layout/title_only_backicon_title" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/PIA_rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/click_trasparent_selector"
+        android:clickable="true">
+
+        <TextView
+            style="@style/person_info_left_style"
+            android:text="@string/person_header" />
+
+        <com.cn.aixiyi.myview.MyHeaderCricleView
+            android:id="@+id/person_header_img"
+            style="@style/person_info_right_style"
+            android:src="@mipmap/ic_launcher" />
+    </RelativeLayout>
+
+    <include layout="@layout/main_line_lay" />
+
+    <RelativeLayout
+        android:id="@+id/phone_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_info_hight"
+        android:background="@drawable/click_trasparent_selector">
+
+        <TextView
+            android:id="@+id/phone_txt"
+            style="@style/person_info_left_style"
+            android:text="@string/person_tel" />
+
+
+        <TextView
+            android:id="@+id/person_tel_txt"
+            style="@style/person_info_righttxt_style"
+            android:text="暂无" />
+    </RelativeLayout>
+
+    <include layout="@layout/main_line_lay" />
+
+    <RelativeLayout
+        android:id="@+id/address_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_info_hight"
+        android:background="@drawable/click_trasparent_selector">
+
+        <TextView
+            style="@style/person_info_left_style"
+            android:text="@string/person_address" />
+        <TextView
+
+            android:id="@+id/person_add_txt"
+            style="@style/person_info_righttxt_style"
+            android:text="暂无" />
+    </RelativeLayout>
+
+    <include layout="@layout/main_line_lay" />
+
+    <RelativeLayout
+        android:id="@+id/name_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_info_hight"
+        android:background="@drawable/click_trasparent_selector">
+
+        <TextView
+            style="@style/person_info_left_style"
+            android:text="@string/person_name" />
+
+        <TextView
+            android:id="@+id/person_name_txt"
+            style="@style/person_info_righttxt_style"
+            android:text="暂无" />
+    </RelativeLayout>
+
+    <include layout="@layout/main_line_lay" />
+    <RelativeLayout
+        android:id="@+id/sex_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_info_hight"
+        android:background="@drawable/click_trasparent_selector">
+
+        <TextView
+            style="@style/person_info_left_style"
+            android:text="@string/person_sex" />
+
+        <TextView
+            android:id="@+id/person_sex_txt"
+            style="@style/person_info_righttxt_style"
+            android:text="暂无" />
+    </RelativeLayout>
+
+    <include layout="@layout/main_line_lay" />
+
+    <RelativeLayout
+        android:id="@+id/school_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_info_hight"
+        android:background="@drawable/click_trasparent_selector">
+
+        <TextView
+            style="@style/person_info_left_style"
+            android:text="@string/person_collage" />
+
+        <TextView
+            android:id="@+id/person_collage_txt"
+            style="@style/person_info_righttxt_style"
+            android:text="暂无" />
+    </RelativeLayout>
+
+    <include layout="@layout/main_line_lay" />
+
+    <RelativeLayout
+        android:id="@+id/class_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_info_hight"
+        android:background="@drawable/click_trasparent_selector">
+
+        <TextView
+            style="@style/person_info_left_style"
+            android:text="@string/person_class" />
+
+        <TextView
+            android:id="@+id/person_class_txt"
+            style="@style/person_info_righttxt_style"
+            android:text="暂无" />
+    </RelativeLayout>
+
+    <include layout="@layout/main_line_lay" />
+
+    <RelativeLayout
+        android:id="@+id/year_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_info_hight"
+        android:background="@drawable/click_trasparent_selector">
+
+        <TextView
+            style="@style/person_info_left_style"
+            android:text="@string/person_year" />
+
+        <TextView
+            android:id="@+id/person_year_txt"
+            style="@style/person_info_righttxt_style"
+            android:text="暂无" />
+    </RelativeLayout>
+
+    <include layout="@layout/main_line_lay" />
+
+   <RelativeLayout
+       android:id="@+id/loginpass_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_info_hight"
+        android:layout_marginTop="@dimen/common_margin_top"
+       android:background="@drawable/click_trasparent_selector">
+
+        <TextView
+            style="@style/person_info_left_style"
+            android:text="@string/person_loginpass" />
+
+        <TextView
+            android:id="@+id/person_loginpass_txt"
+            style="@style/person_info_righttxt_style"
+            android:textColor="@color/aixiyi_center_txt_blue"
+            android:text="修改" />
+    </RelativeLayout>
+
+    <include layout="@layout/main_line_lay" />
+    <RelativeLayout
+        android:id="@+id/paypass_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_info_hight"
+        android:background="@drawable/click_trasparent_selector">
+
+        <TextView
+            style="@style/person_info_left_style"
+            android:text="@string/person_paypass" />
+
+
+        <TextView
+            android:id="@+id/person_zhifu_txt"
+            style="@style/person_info_righttxt_style"
+            android:textColor="@color/aixiyi_center_txt_blue"
+            android:text="修改" />
+    </RelativeLayout>
+
+    <include layout="@layout/main_line_lay" />
+    <RelativeLayout
+        android:id="@+id/thirdlogin_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_info_hight"
+        android:background="@drawable/click_trasparent_selector"  >
+
+        <TextView
+            style="@style/person_info_left_style"
+            android:text="@string/person_three"
+            />
+
+
+        <TextView
+            android:id="@+id/person_three_txt"
+            style="@style/person_info_righttxt_style"
+            android:text="未绑定"   />
+    </RelativeLayout>
+    <include layout="@layout/main_line_lay" />
+            <Button
+                android:id="@+id/gz_result_btn"
+                android:layout_width="@dimen/aixiyi_btn_width"
+                android:layout_height="@dimen/aixiyi_btn_hight"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/aixiyi_item_hight1"
+                android:layout_marginBottom="@dimen/aixiyi_normal_left"
+                android:background="@drawable/register_result_btn"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/aixiyi_normal" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

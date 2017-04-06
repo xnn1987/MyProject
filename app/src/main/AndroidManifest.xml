@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cn.aixiyi">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <!-- Dangerous Permissions start -->
+    <!-- Required -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--PHONE-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!--CAMERA-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!--CONTACTS-->
+    <!--LOCATION-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--MICROPHONE-->
+    <!--SENSORS-->
+    <!--SMS-->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <!--STORAGE-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_back_001"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="zaiGgZgnpGMH3SFTGlGP4tOhfxAGYd9t" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <!-- ############### 友盟  ####注册SDK使用的Activity###################### -->
+        <!-- 分享编辑页 -->
+<!--        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateVisible|adjustResize" />-->
+        <!--Umeng多渠道打包-->
+<!--        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5822d43e82b63567990039ec" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />-->
+
+        <!--================================主体部分=================================-->
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.UserLoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.UserRegisterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.ForgetPasActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+         <activity
+             android:name=".activity.AiMainActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait">
+
+         </activity>
+        <activity
+            android:name=".activity.AiMainWebViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.AiProtocolActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.PersonInfoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.PersonInfoAlertActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".myview.imageReduce.ImageCompressActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".myview.imageReduce.ClipPictureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".myview.imageReduce.PreviewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.MyQianBaoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.AdsRevenueActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.MessageCenterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.SuggestRebackActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.MySaveActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".activity.WashingMachineActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <!--二维码-->
+        <activity
+            android:name=".utils.zxing.CaptureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".activity.MyOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+         <activity
+             android:name=".activity.AboutAiXiyiActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait"></activity>
+         <activity
+             android:name=".activity.AdsExplainActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait"></activity>
+         <activity
+             android:name=".activity.AiXyWebViewActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait"></activity>
+         <activity
+             android:name=".activity.ControlCenterActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait">
+
+         </activity>
+
+         <activity
+             android:name=".activity.HelpCenterActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait"></activity>
+
+         <activity
+             android:name=".activity.MessageDetialActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait">
+
+         </activity>
+         <activity
+             android:name=".activity.MyLifeDetialActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait">
+
+         </activity>
+         <activity
+             android:name=".activity.MyQBRechargeActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait">
+
+         </activity>
+
+         <activity
+             android:name=".activity.MyQBExplainActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait">
+         </activity>
+
+         <activity
+             android:name=".activity.SuggestRkDetialActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait">
+
+         </activity>
+         <activity
+             android:name=".activity.SuggestRKStyleActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait">
+
+         </activity>
+
+
+         <activity
+             android:name=".activity.WashMachDetailActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait">
+         </activity>
+         <activity
+             android:name=".activity.WashMachListActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait">
+
+         </activity>
+         <activity
+             android:name=".activity.WashMapActivity"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait">
+
+         </activity>
+        <activity
+            android:name=".activity.WashAddressMapActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <!--微信支付-->
+         <activity
+             android:name=".wxapi.WXPayEntryActivity"
+             android:exported="true"
+             android:launchMode="singleTop" />
+         <activity
+             android:name="net.sourceforge.simcpux.PayActivity"
+             android:label="@string/app_name" />
+
+         <receiver android:name="net.sourceforge.simcpux.AppRegister">
+             <intent-filter>
+                 <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+             </intent-filter>
+         </receiver>
+        <!--支付宝-->
+         <activity
+             android:name="com.alipay.sdk.app.H5PayActivity"
+             android:configChanges="orientation|keyboardHidden|navigation"
+             android:exported="false"
+             android:screenOrientation="behind"></activity>
+         <activity
+             android:name="com.alipay.sdk.auth.AuthActivity"
+             android:configChanges="orientation|keyboardHidden|navigation"
+             android:exported="false"
+             android:screenOrientation="behind"></activity>
+         <activity
+             android:name="com.alipay.sdk.app.H5AuthActivity"
+             android:configChanges="orientation|keyboardHidden|navigation"
+             android:exported="false"
+             android:screenOrientation="behind"
+             android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+       <!--百度地图-->
+        <activity
+            android:name=".BaseMapDemo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".LocationDemo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".DistrictSearchDemo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".GeoCoderDemo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".NearByDemo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+    </application>
+
+</manifest>

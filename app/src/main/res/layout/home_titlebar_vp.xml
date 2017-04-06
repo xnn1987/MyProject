@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homeFM_vp_View"
+    android:layout_width="match_parent"
+    android:layout_height="165dp">
+
+    <com.xxjr.xxjr.custview.MyPagerGalleryView
+        android:id="@+id/homeFm_ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/homeTitle_ll_ovalLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal"></LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/HomeFm_iv_dingwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="4dp"
+            android:scaleType="fitXY"
+  />
+
+        <TextView
+            android:id="@+id/HomeFm_tv_LocationCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/HomeFm_iv_dingwei"
+            android:text="深圳"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="36dp"
+            android:layout_toRightOf="@id/HomeFm_tv_LocationCity"
+            android:background="@drawable/layout_shape_coners_white"
+            android:gravity="center_vertical"
+            android:paddingRight="22dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp"
+              />
+
+            <EditText
+                android:id="@+id/Home_et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:hint="输入机构或产品名称"
+                android:textColor="#cfcfcf"
+                android:textColorHint="#cfcfcf"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/Home_iv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/click_trasparent_selector"
+             />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,229 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="BaseAppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseAppTheme" />
+
+
+    <style name="MyDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/gray_edt</item>
+    </style>
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@drawable/dialog_back</item>
+    </style>
+    <style name="login_reg_edt_lay_style">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="login_reg_img_lay_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_centerVertical">true</item>
+
+    </style>
+
+
+    <style name="header_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gray_txt</item>
+    </style>
+    <style name="header_right_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="Login_style_Edt">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_gravity">center_vertical</item>
+    <item name="android:gravity">center_vertical|left</item>
+    <item name="android:layout_marginLeft">12dp</item>
+    <item name="android:layout_marginRight">10dp</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:background">@drawable/btn_shape_coners_orange</item>
+    <item name="android:textColorHint">@color/gray_edt</item>
+    <item name="android:textColor">@color/gray_txt_ps</item>
+    <item name="android:textSize">14sp</item>
+</style>
+    <style name="Right_Icon_Img">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_alignParentRight">true</item>
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:layout_marginRight">@dimen/common_margin_left3</item>
+    <item name="android:background">@mipmap/jiantou_blue</item>
+</style>
+    <style name="Right_Icon_Gray_Img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/aixiyi_normal_left</item>
+        <item name="android:background">@mipmap/jiantou_right</item>
+    </style>
+    <style name="Right_Txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/aixiyi_normal_left</item>
+    </style>
+    <style name="person_info_left_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/aixiyi_normal_right</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/aixiyi_normal</item>
+        <item name="android:textColor">@color/aixiyi_setting_gray</item>
+    </style>
+    <style name="person_info_righttxt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/aixiyi_normal</item>
+        <item name="android:textColor">@color/aixiyi_qianbao_lightgray</item>
+    </style>
+    <style name="person_info_rightedt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_horizontal|right</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:hint">@string/person_edt</item>
+        <item name="android:textColorHint">@color/aixiyi_qianbao_lightgray</item>
+        <item name="android:textColor">@color/aixiyi_qianbao_lightgray</item>
+        <item name="android:textSize">@dimen/aixiyi_normal</item>
+    </style>
+    <style name="person_info_right_style">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="qianbao_txt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">33dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/aixiyi_normal</item>
+        <item name="android:textColor">@color/aixiyi_qianbao_lightgray</item>
+    </style>
+
+
+    <style name="dialog_button_submite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/dialog_submite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:text">确 定</item>
+    </style>
+
+    <style name="dialog_button_cancel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/deep_gray</item>
+        <item name="android:background">@drawable/dialog_cancel</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:text">取 消</item>
+    </style>
+
+    <!--爱洗衣style-->
+    <style name="aixiyi_skip_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/btn_shape_coners_gray</item>
+    </style>
+    <style name="aixiyi_header_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/center_header_coners_bg</item>
+    </style>
+    <style name="aixiyi_input_edt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal|center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/aixiyi_edt_gray</item>
+        <item name="android:textColor">@color/aixiyi_edt_gray</item>
+        <item name="android:textSize">@dimen/aixiyi_normal</item>
+    </style>
+
+    <style name="login_reg_yanzheng_btn_lay_style">
+        <item name="android:layout_width">77dp</item>
+        <item name="android:layout_height">23dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/log_reg_yanz_btn</item>
+        <item name="android:text">@string/lr_have_yanzheng</item>
+        <item name="android:textSize">@dimen/aixiyi_normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popwin_show</item>
+        <item name="android:windowExitAnimation">@anim/popwin_hide</item>
+    </style>
+
+    <style name="popwin_anim_shared">
+        <item name="android:windowEnterAnimation">@anim/popwin_shared_start</item>
+        <item name="android:windowExitAnimation">@anim/popwin_shared_end</item>
+    </style>
+</resources>

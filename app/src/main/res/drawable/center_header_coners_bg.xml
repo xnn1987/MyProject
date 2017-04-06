@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:radius="12dp"/>
+    <solid
+        android:color="@color/aixiyi_center_txt_blue"/>
+    <!-- padding: Txt 里面的文字与Txt边界的间隔 -->
+
+</shape>

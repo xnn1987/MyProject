@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/aixiyi_main_backgroud">
+    <include layout="@layout/title_three_tow_icon" />
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:round="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_marginTop="@dimen/common_margin_top"
+        android:background="@color/white"
+        android:gravity="center">
+        <com.cn.aixiyi.myview.MyAdsCircleView
+            android:id="@+id/adstotal_img"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_centerInParent="true"
+            round:radius="62dp"
+            round:ringWidth="5dp"
+            round:startAngle="-90"
+            round:centerColor="@color/white"
+            round:ringColor="@color/aixiyi_qianbao_lightgray"
+            round:progressColor="@color/aixiyi_center_txt_blue"
+            round:textColor="@color/aixiyi_center_txt_blue"
+            round:textSize="40dp"
+            round:isTextDisplay="true"
+            android:layout_gravity="center"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/common_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cn.aixiyi.myview.PullToRefreshView
+            android:id="@+id/MMA_ptr_contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/MMA_lv_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#00000000"
+                android:dividerHeight="@dimen/aixiyi_divider_lowerhight"
+                android:listSelector="#00000000" />
+
+        </com.cn.aixiyi.myview.PullToRefreshView>
+
+        <ImageView
+            android:id="@+id/MMA_iv_wujilu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/wujilu" />
+
+    </RelativeLayout>
+</LinearLayout>

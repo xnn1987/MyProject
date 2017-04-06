@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dialog_ll_person_window"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:background="@drawable/layout_shape_coners"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/dialog_tv_personinfo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:hint="请输入内容。。。。"
+            android:textColorHint="@color/aixiyi_line_gray"
+            android:textColor="@color/aixiyi_setting_gray"
+            android:textSize="@dimen/aixiyi_normal"
+            android:background="@drawable/btn_shape_coners_orange"/>
+        <View
+            android:layout_width="250dp"
+            android:layout_height="@dimen/common_margin_status"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/aixiyi_detail_hight"
+            android:orientation="horizontal"
+           >
+            <TextView
+                android:id="@+id/dialog_tv_ensure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:clickable="true"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+               />
+            <View
+                android:layout_width="@dimen/common_margin_status"
+                android:layout_height="@dimen/aixiyi_detail_hight"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/dialog_tv_cancle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:clickable="true"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="25sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contive"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.cn.aixiyi.myview.imageReduce.view.ClipImageLayout
+        android:id="@+id/id_clipImageLayout"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <include layout="@layout/title_three_view_titlebar"/>
+
+
+</RelativeLayout>

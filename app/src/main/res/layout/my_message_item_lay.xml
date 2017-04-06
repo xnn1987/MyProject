@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:orientation="vertical"
+    android:background="@color/backgroud_gray">
+
+    <ImageView
+        android:id="@+id/message_img"
+        android:layout_width="@dimen/aixiyi_message_width"
+        android:layout_height="@dimen/aixiyi_message_hight"
+        android:src="@mipmap/my_message_logo"/>
+    <RelativeLayout
+        android:layout_toRightOf="@id/message_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:background="@drawable/my_message_content"
+        >
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="20dp"
+            android:text="爱洗衣冲1"
+            android:paddingRight="20dp"
+            android:singleLine="true"
+            android:textColor="@color/aixiyi_setting_gray"
+            android:textSize="@dimen/aixiyi_normal"
+           />
+
+        <TextView
+            android:id="@+id/message_content"
+            android:layout_below="@id/message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="17dp"
+            android:paddingRight="20dp"
+            android:text=""
+            android:textColor="@color/aixiyi_qianbao_lightgray"
+            android:textSize="@dimen/aixiyi_small" />
+        <TextView
+            android:id="@+id/message_time"
+            android:layout_below="@id/message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:text="2-15 22:00"
+            android:textColor="@color/aixiyi_qianbao_lightgray"
+            android:textSize="@dimen/aixiyi_small"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

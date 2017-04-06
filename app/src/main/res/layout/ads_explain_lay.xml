@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/aixiyi_main_backgroud">
+    <include
+        layout="@layout/title_only_backicon_title"
+        />
+    <TextView
+        android:id="@+id/ads_explain_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/gray_txt"
+        android:textSize="@dimen/aixiyi_normal"
+        />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+<ListView
+    android:id="@+id/wash_list_floor_lv"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    android:divider="@null"
+    />
+</LinearLayout>

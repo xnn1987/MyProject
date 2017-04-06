@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aixiyi_main_backgroud"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_only_backicon_title" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:round="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/aixiyi_normal_left1"
+            android:layout_marginRight="@dimen/aixiyi_normal_left1"
+            android:layout_marginTop="@dimen/common_margin_top"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/washing_center_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:text="和福居一号机"
+                android:textColor="@color/aixiyi_setting_gray"
+                android:textSize="@dimen/aixiyi_normal_big" />
+
+            <com.cn.aixiyi.myview.MyControlCricleView
+                android:id="@+id/control_center_img"
+                android:layout_below="@id/washing_center_txt"
+                android:layout_marginTop="@dimen/aixiyi_control_width"
+                android:layout_marginLeft="@dimen/aixiyi_control_hight"
+                android:layout_marginRight="@dimen/aixiyi_control_hight"
+                android:layout_marginBottom="51dp"
+                android:layout_width="236dp"
+                android:layout_height="236dp"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="@dimen/common_margin_top"
+            android:layout_marginLeft="@dimen/aixiyi_normal_left"
+            android:layout_marginRight="@dimen/aixiyi_normal_right"
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/aixiyi_normal_left"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+            >
+                <Button
+                    android:id="@+id/put_btn"
+                    android:layout_width="@dimen/aixiyi_control_width1"
+                    android:layout_height="@dimen/aixiyi_control_hight1"
+                    android:gravity="center"
+                    android:text="放衣服"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/aixiyi_normal"
+                    android:background="@drawable/btn_shape_coners_left"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="38dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/xiyi_btn"
+                    android:layout_width="@dimen/aixiyi_control_width1"
+                    android:layout_height="@dimen/aixiyi_control_hight1"
+                    android:gravity="center"
+                    android:text="洗衣服"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/aixiyi_normal"
+                    android:background="@drawable/btn_shape_coners_center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/aixiyi_normal_right"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/qu_btn"
+                    android:layout_width="@dimen/aixiyi_control_width1"
+                    android:layout_height="@dimen/aixiyi_control_hight1"
+                    android:gravity="center"
+                    android:text="取衣服"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/aixiyi_normal"
+                    android:background="@drawable/btn_shape_coners_right"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/aixiyi_item_hight"
+    android:background="@drawable/click_trasparent_selector">
+
+
+    <ImageView
+        android:id="@+id/waching_mach_img"
+        android:layout_width="@dimen/aixiyi_control_width1"
+        android:layout_height="@dimen/aixiyi_control_width1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@mipmap/my_save_xiyiji" />
+
+    <LinearLayout
+        android:layout_toRightOf="@id/waching_mach_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/waching_address_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广轻工东区1栋"
+            android:textColor="@color/aixiyi_setting_gray"
+            android:textSize="@dimen/aixiyi_normal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/waching_address_txt"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/waching_mach_img"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/address_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/save_adress" />
+
+            <TextView
+                android:id="@+id/waching_distance_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:text="1204m"
+                android:textColor="@color/aixiyi_qianbao_lightgray"
+                android:textSize="@dimen/aixiyi_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/waching_num_txt"
+        style="@style/Right_Txt"
+        android:text="14台空闲"
+        android:textColor="@color/aixiyi_center_txt_blue"
+        android:textSize="@dimen/aixiyi_normal" />
+</RelativeLayout>

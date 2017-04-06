@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                  <RelativeLayout
+                      android:id="@+id/xiyji_detial_header_lay"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                   >
+                      <ImageView
+                          android:id="@+id/wash_header_img"
+                          android:layout_width="match_parent"
+                          android:layout_height="225dp"
+                          android:background="@mipmap/detail_banner002"
+                        />
+                      <RelativeLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="@dimen/aixiyi_detail_hight"
+                          android:layout_marginTop="@dimen/common_margin_top4"
+                         >
+                          <LinearLayout
+                              android:id="@+id/ThreeTitle2Icon_ll_back"
+                              android:layout_width="@dimen/aixiyi_detail_hight"
+                              android:layout_height="@dimen/aixiyi_detail_hight"
+                              android:layout_marginLeft="@dimen/aixiyi_normal_left"
+                              android:gravity="center"
+                              android:background="@drawable/btn_shape_coners_detial" >
+                              <ImageView
+                                  android:id="@+id/back_img"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:src="@mipmap/aixiyi_back"
+                                  android:layout_gravity="center"
+                                />
+                          </LinearLayout>
+                          <LinearLayout
+                              android:id="@+id/ThreeTitle2Icon_ll_Icon"
+                              android:layout_width="@dimen/aixiyi_detail_hight"
+                              android:layout_height="@dimen/aixiyi_detail_hight"
+                              android:layout_alignParentRight="true"
+                              android:layout_marginRight="@dimen/aixiyi_normal_left"
+                              android:gravity="center"
+                              android:background="@drawable/btn_shape_coners_detial" >
+                              <ImageView
+                                  android:id="@+id/ThreeTitle2Icon_iv_icon"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:src="@drawable/detail_save_white" />
+                          </LinearLayout>
+                      </RelativeLayout>
+                  </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/aixiyi_item_hight"
+                android:background="@drawable/click_trasparent_selector">
+
+                <ImageView
+                    android:id="@+id/title_img"
+                    android:layout_width="@dimen/aixiyi_detial_width"
+                    android:layout_height="@dimen/aixiyi_detial_width"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/aixiyi_normal_left" />
+
+                <TextView
+                    android:id="@+id/waching_style_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_left3"
+                    android:layout_toRightOf="@id/title_img"
+                    android:text="富源居1号机"
+                    android:textColor="@color/aixiyi_setting_gray"
+                    android:textSize="@dimen/aixiyi_normal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/waching_style_txt"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@id/title_img"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/waching_address_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="旧市头7巷2号富源居"
+                        android:textColor="@color/aixiyi_qianbao_lightgray"
+                        android:textSize="@dimen/aixiyi_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/waching_state_txt"
+                    style="@style/Right_Txt"
+                    android:text="空闲"
+                    android:textColor="@color/aixiyi_center_txt_blue"
+                    android:textSize="@dimen/aixiyi_normal" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/aixiyi_detail_hight1"
+                android:layout_marginTop="@dimen/common_margin_left2"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/normal_lay"
+                        android:layout_width="@dimen/aixiyi_btn_hight"
+                        android:layout_height="@dimen/aixiyi_btn_hight"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/btn_seletctor_detial_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/normal_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btn_selector_detail_normal" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/common_margin_top3"
+                        android:text="标准"
+                        android:textColor="@color/aixiyi_setting_gray"
+                        android:textSize="@dimen/aixiyi_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/dawu_lay"
+                        android:layout_width="@dimen/aixiyi_btn_hight"
+                        android:layout_height="@dimen/aixiyi_btn_hight"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/btn_seletctor_detial_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/big_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btn_seletctor_detial_big" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/common_margin_top3"
+                        android:text="大物"
+                        android:textColor="@color/aixiyi_setting_gray"
+                        android:textSize="@dimen/aixiyi_normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/kuaisu_lay"
+                        android:layout_width="@dimen/aixiyi_btn_hight"
+                        android:layout_height="@dimen/aixiyi_btn_hight"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/btn_seletctor_detial_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fast_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btn_seletctor_detial_fast"
+
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/common_margin_top3"
+                        android:text="快速"
+                        android:textColor="@color/aixiyi_setting_gray"
+                        android:textSize="@dimen/aixiyi_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/tuoshui_lay"
+                        android:layout_width="@dimen/aixiyi_btn_hight"
+                        android:layout_height="@dimen/aixiyi_btn_hight"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/btn_seletctor_detial_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/water_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btn_seletctor_detial_water" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/common_margin_top3"
+                        android:text="脱单水"
+                        android:textColor="@color/aixiyi_setting_gray"
+                        android:textSize="@dimen/aixiyi_normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/left_ads_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/aixiyi_btn_hight"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/aixiyi_normal_left"
+                    android:text="提示：标准程序，可洗普通衣物"
+                    android:textColor="@color/aixiyi_qianbao_lightgray"
+                    android:textSize="@dimen/aixiyi_small" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/aixiyi_main_hight"
+                android:background="@drawable/click_trasparent_selector">
+
+                <ImageView
+                    android:id="@+id/normal_check_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/aixiyi_normal_left"
+                    android:background="@drawable/detail_soft" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_top3"
+                    android:layout_toRightOf="@id/normal_check_img"
+                    android:text="洗衣程序"
+                    android:textColor="@color/aixiyi_qianbao_lightgray"
+                    android:textSize="@dimen/aixiyi_normal" />
+
+                <TextView
+                    android:id="@+id/normal_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/aixiyi_normal_right"
+                    android:text="标准"
+                    android:textColor="@color/aixiyi_setting_gray"
+                    android:textSize="@dimen/aixiyi_normal" />
+            </RelativeLayout>
+
+            <include layout="@layout/main_line_lay" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/aixiyi_main_hight"
+                android:background="@drawable/click_trasparent_selector">
+
+                <ImageView
+                    android:id="@+id/pay_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/aixiyi_normal_left"
+                    android:background="@drawable/detial_jie" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_top3"
+                    android:layout_toRightOf="@id/pay_img"
+                    android:text="金额"
+                    android:textColor="@color/aixiyi_qianbao_lightgray"
+                    android:textSize="@dimen/aixiyi_normal" />
+
+                <TextView
+                    android:id="@+id/pay_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/aixiyi_normal_right"
+                    android:text="40元"
+                    android:textColor="@color/aixiyi_yan_yellow"
+                    android:textSize="@dimen/aixiyi_normal" />
+            </RelativeLayout>
+
+            <include layout="@layout/main_line_lay" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/aixiyi_main_hight"
+                android:background="@drawable/click_trasparent_selector">
+
+                <ImageView
+                    android:id="@+id/time_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/aixiyi_normal_left"
+                    android:background="@drawable/detial_time" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_top3"
+                    android:layout_toRightOf="@id/time_img"
+                    android:text="洗衣时间"
+                    android:textColor="@color/aixiyi_qianbao_lightgray"
+                    android:textSize="@dimen/aixiyi_normal" />
+
+                <TextView
+                    android:id="@+id/time_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/aixiyi_normal_right"
+                    android:text="35分钟"
+                    android:textColor="@color/aixiyi_setting_gray"
+                    android:textSize="@dimen/aixiyi_normal" />
+            </RelativeLayout>
+
+            <include layout="@layout/main_line_lay" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/aixiyi_main_hight"
+                android:layout_marginTop="@dimen/aixiyi_small"
+                android:background="@drawable/click_trasparent_selector">
+
+                <TextView
+                    android:id="@+id/xiyiye_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/aixiyi_normal_left"
+                    android:text="洗衣液"
+                    android:textColor="@color/aixiyi_setting_gray"
+                    android:textSize="@dimen/aixiyi_normal" />
+
+                <ToggleButton
+                    android:id="@+id/xiyiye_tbtn"
+                    android:layout_width="48dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/aixiyi_normal_right"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_btn"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/aixiyi_light_by_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/aixiyi_main_hight"
+                android:background="@drawable/click_trasparent_selector">
+
+                <TextView
+                    android:id="@+id/rousunji_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/aixiyi_normal_left"
+                    android:text="柔顺剂"
+                    android:textColor="@color/aixiyi_setting_gray"
+                    android:textSize="@dimen/aixiyi_normal" />
+
+                <ToggleButton
+                    android:id="@+id/rousunji_btn"
+                    android:layout_width="48dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/aixiyi_normal_right"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_btn"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""
+                    android:textColor="@color/aixiyi_setting_gray"
+                    android:textSize="@dimen/aixiyi_normal" />
+            </RelativeLayout>
+
+            <include layout="@layout/main_line_lay" />
+
+            <Button
+                android:id="@+id/update_btn"
+                android:layout_width="@dimen/aixiyi_btn_width"
+                android:layout_height="@dimen/aixiyi_btn_hight"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/aixiyi_item_hight1"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/register_result_btn"
+                android:text="确认订单"
+                android:textColor="@color/white"
+                android:textSize="@dimen/aixiyi_normal" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

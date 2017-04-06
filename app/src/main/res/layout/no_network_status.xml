@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_margin_status"
+        android:background="@color/line_gray"/>
+
+    <LinearLayout
+
+        android:id="@+id/cannot_network"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#feefb8"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_network"
+            android:textColor="#151410"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

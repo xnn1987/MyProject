@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/aixiyi_normal"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/MMA_Txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/aixiyi_normal"
+            android:textColor="@color/gray_msg_txt"/>
+        <TextView
+            android:id="@+id/MMA_Txt_content"
+            android:layout_below="@id/MMA_Txt_title"
+            android:layout_width="@dimen/aixiyi_item_hight"
+            android:layout_height="@dimen/common_margin_top4"
+            android:layout_marginTop="@dimen/common_margin_top3"
+            android:gravity="center"
+            android:text="软件运行问题"
+            android:textSize="@dimen/aixiyi_small"
+            android:textColor="@color/aixiyi_center_txt_blue"
+            android:background="@drawable/login_result_btn"/>
+        <TextView
+            android:id="@+id/MMA_Txte_time"
+            android:layout_below="@id/MMA_Txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/aixiyi_normal_left"
+            android:text="2016-10-26"
+            android:textSize="@dimen/aixiyi_normal"
+            android:textColor="@color/light_gray"
+           />
+    </RelativeLayout>
+</LinearLayout>

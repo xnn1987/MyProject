@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/aixiyi_item_hight"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/aixiyi_normal_left"
+        android:layout_marginRight="@dimen/aixiyi_normal_right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/MMA_Txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_left3"
+            android:text="滴滴10月广告"
+            android:textColor="@color/aixiyi_setting_gray"
+            android:textSize="@dimen/aixiyi_normal_big" />
+
+        <TextView
+            android:id="@+id/MMA_Txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/common_margin_left3"
+            android:text="查看广告收益"
+            android:textColor="@color/aixiyi_qianbao_lightgray"
+            android:textSize="@dimen/aixiyi_small" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/aixiyi_normal_left"
+        android:layout_marginRight="@dimen/common_margin_left3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/MMA_Txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="2016-10-16 9:00"
+            android:textColor="@color/aixiyi_qianbao_lightgray"
+            android:textSize="@dimen/aixiyi_small" />
+
+        <TextView
+            android:id="@+id/MMA_Txt_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:text="+0.03"
+            android:textColor="@color/aixiyi_yan_yellow"
+            android:textSize="@dimen/aixiyi_normal" />
+    </RelativeLayout>
+</LinearLayout>

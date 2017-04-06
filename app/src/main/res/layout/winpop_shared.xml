@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:background="@color/aixiyi_center_txt_blue">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="分享到"
+           android:textSize="12sp"
+           android:layout_margin="14dp"
+           android:textColor="#31a4e6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/winpopShared_ll_wx"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/my_qianbao_weixin"/>
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:textColor="#4c4c4c"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/winpopShared_ll_pengyouquan"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/share_wechat_moments"/>
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:textColor="#4c4c4c"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="朋友圈"/>
+
+            </LinearLayout>
+
+<!--            <LinearLayout
+                android:id="@+id/winpopShared_ll_QQ"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/share_qq"/>
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:textColor="#4c4c4c"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QQ"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/winpopShared_ll_QZone"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/share_qqkongjian"/>
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:textColor="#4c4c4c"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="空间"/>
+
+            </LinearLayout>-->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/winpopShared_ll_cancel"
+            android:layout_marginTop="12dp"
+            android:text="取消"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/aixiyi_center_txt_blue"/>
+
+    </LinearLayout>
+
+</LinearLayout>

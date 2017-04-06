@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/onlytitle_ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/titleBar_ll_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/click_trasparent_selector"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/aixiyi_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titleBar_tv_title"
+            android:layout_toRightOf="@id/titleBar_ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/aixiyi_header_gray"
+            android:textSize="@dimen/aixiyi_normal_big"
+          />
+
+    </RelativeLayout>
+   <include
+       layout="@layout/main_line_lay"
+       />
+    <include layout="@layout/no_network_status" />
+
+
+</LinearLayout>
